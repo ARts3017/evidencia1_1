@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2/05/2019, 09:58:38 AM
+    Author     : Cdis
+*/
+
+body{
+    background-color:#457B9D;
+}
+
+/* #########################Es el header#######################*/
+#header{
+    
+    height: 150px;
+    background-color:#1D3557;
+    
+    
+}
+
+.title h1{
+    padding-top: 43px;
+    color:#A8DADC;
+    
+}
+
+/*#############################FIN###########################*/
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Taablita!!!!!!!!!!!!!!!!!!!!!!*/
+table{
+    color: white;
+    
+    
+}
+
+table th,td{
+    
+  border: 1px solid black;
+
+}
+tbody tr:hover{
+    background-color: #E63946;
+}
+
+thead{
+    background-color: white;
+    color:#1D3557;
+    
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Fin Tablita°°°°°°°°°°*/
+
+/*=======================================Footer=============================*/
+
+#footer{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    left:0;
+    bottom:0;
+    color:white;
+    background-color: black;
+}

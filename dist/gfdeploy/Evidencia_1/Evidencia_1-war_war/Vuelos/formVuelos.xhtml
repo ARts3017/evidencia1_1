@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="Create/Edit"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="Id:" for="id" />
+                    <h:inputText id="id" value="#{vuelosFacade.vuelos.id}" title="Id" required="true" requiredMessage="The Id field is required."/>
+                    <h:outputLabel value="NumeroVuelo:" for="numeroVuelo" />
+                    <h:inputText id="numeroVuelo" value="#{vuelosFacade.vuelos.numeroVuelo}" title="NumeroVuelo" required="true" requiredMessage="The NumeroVuelo field is required."/>
+                    <h:outputLabel value="NumeroAvion:" for="numeroAvion" />
+                    <h:inputText id="numeroAvion" value="#{vuelosFacade.vuelos.numeroAvion}" title="NumeroAvion" required="true" requiredMessage="The NumeroAvion field is required."/>
+                    <h:outputLabel value="Origen:" for="origen" />
+                    <h:inputText id="origen" value="#{vuelosFacade.vuelos.origen}" title="Origen" required="true" requiredMessage="The Origen field is required."/>
+                    <h:outputLabel value="Destino:" for="destino" />
+                    <h:inputText id="destino" value="#{vuelosFacade.vuelos.destino}" title="Destino" required="true" requiredMessage="The Destino field is required."/>
+                    <h:outputLabel value="NumeroPasajeros:" for="numeroPasajeros" />
+                    <h:inputText id="numeroPasajeros" value="#{vuelosFacade.vuelos.numeroPasajeros}" title="NumeroPasajeros" />
+                    <h:outputLabel value="FechaInicio:" for="fechaInicio" />
+                    <h:inputText id="fechaInicio" value="#{vuelosFacade.vuelos.fechaInicio}" title="FechaInicio" >
+                        <f:convertDateTime pattern="MM/dd/yyyy" />
+                    </h:inputText>
+                    <h:outputLabel value="FechaFin:" for="fechaFin" />
+                    <h:inputText id="fechaFin" value="#{vuelosFacade.vuelos.fechaFin}" title="FechaFin" >
+                        <f:convertDateTime pattern="MM/dd/yyyy" />
+                    </h:inputText>
+                    <h:outputLabel value="HoraInicio:" for="horaInicio" />
+                    <h:inputText id="horaInicio" value="#{vuelosFacade.vuelos.horaInicio}" title="HoraInicio" >
+                        <f:convertDateTime pattern="HH:mm:ss" />
+                    </h:inputText>
+                    <h:outputLabel value="HoraFin:" for="horaFin" />
+                    <h:inputText id="horaFin" value="#{vuelosFacade.vuelos.horaFin}" title="HoraFin" >
+                        <f:convertDateTime pattern="HH:mm:ss" />
+                    </h:inputText>
+                </h:panelGrid>
+            </h:form>
+        </f:view>
+
+    </h:body>
+</html>
+
